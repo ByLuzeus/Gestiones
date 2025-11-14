@@ -1,83 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edredones</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edredones</title>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
+    <style>
+      .table-row-toggle {
+        cursor: pointer;
+      }
+      .table-row-toggle:hover {
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <div class="container py-4">
+      <h1 class="mb-3">🛏️ Edredones</h1>
 
+      <a href="../" class="btn btn-secondary btn-sm mb-3">⬅ Volver</a>
 
-<div class="container py-4">
-<h1 class="mb-3">🛏️ Edredones</h1>
+      <p>Aquí podrás añadir tu información relacionada con los edredones.</p>
 
+      <table class="table table-striped table-bordered mt-4">
+        <thead class="table-dark">
+          <tr>
+            <th>Medidas</th>
+            <th>g/m²</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
 
-<a href="../" class="btn btn-secondary btn-sm mb-3">⬅ Volver</a>
+        <tbody>
 
+          <!-- FILA 1 -->
+          <tr
+            class="table-row-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#row1-details"
+          >
+            <td>210×140 cm</td>
+            <td>≈ 680 g/m²</td>
+            <td>—</td>
+          </tr>
 
-<p>Aquí podrás añadir tu información relacionada con los edredones.</p>
+          <tr id="row1-details" class="collapse">
+            <td colspan="3">
+              <ul class="mb-0 small">
+                <li><strong>Nombre:</strong> Edredón Harold</li>
+                <li><strong>Peso total:</strong> 2 kg</li>
+                <li><strong>Enlace:</strong> —</li>
+              </ul>
+            </td>
+          </tr>
 
+          <!-- FILA 2 -->
+          <tr
+            class="table-row-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#row2-details"
+          >
+            <td>200×230 cm</td>
+            <td>≈ 1087 g/m²</td>
+            <td>46,83 €</td>
+          </tr>
 
-<table class="table table-striped table-bordered mt-4">
-<thead class="table-dark">
-<tr>
-<th>Nombre</th>
-<th>Medidas</th>
-<th>Peso total</th>
-<th>g/m²</th>
-<th>Precio</th>
-<th>Enlace</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Referencia ("ya tengo")</td>
-<td>210×140 cm</td>
-<td>2 kg</td>
-<td>≈ 680 g/m²</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Edredón pluma 95% (algodón)</td>
-<td>200×230 cm</td>
-<td>5 kg</td>
-<td>≈ 1087 g/m²</td>
-<td>46,83 €</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Nordik 400 g/m² (fibra)</td>
-<td>150×220 cm</td>
-<td>1,32 kg</td>
-<td>400 g/m²</td>
-<td>23,45 €</td>
-<td><a href="https://es.aliexpress.com/item/1005010021954235.html" target="_blank">Ver</a></td>
-</tr>
-<tr>
-<td>Edredón lana NZ (2 kg)</td>
-<td>150×200 cm</td>
-<td>2 kg</td>
-<td>≈ 667 g/m²</td>
-<td>44,34 €</td>
-<td><a href="https://es.aliexpress.com/item/1005008472028853.html" target="_blank">Ver</a></td>
-</tr>
-<tr>
-<td>Edredón lana NZ (3 kg)</td>
-<td>150×200 cm</td>
-<td>3 kg</td>
-<td>1000 g/m²</td>
-<td>59,24 €</td>
-<td><a href="https://es.aliexpress.com/item/1005008472028853.html" target="_blank">Ver</a></td>
-</tr>
-</tbody>
-</table>
-</div>
+          <tr id="row2-details" class="collapse">
+            <td colspan="3">
+              <ul class="mb-0 small">
+                <li><strong>Nombre:</strong> Edredón pluma 95% (algodón)</li>
+                <li><strong>Peso total:</strong> 5 kg</li>
+                <li><strong>Enlace:</strong> —</li>
+              </ul>
+            </td>
+          </tr>
 
+          <!-- FILA 3 -->
+          <tr
+            class="table-row-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#row3-details"
+          >
+            <td>150×220 cm</td>
+            <td>400 g/m²</td>
+            <td>23,45 €</td>
+          </tr>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+          <tr id="row3-details" class="collapse">
+            <td colspan="3">
+              <ul class="mb-0 small">
+                <li><strong>Nombre:</strong> Nordik 400 g/m² (fibra)</li>
+                <li><strong>Peso total:</strong> 1,32 kg</li>
+                <li>
+                  <strong>Enlace:</strong>
+                  <a href="https://es.aliexpress.com/item/1005010021954235.html" target="_blank">Ver</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- FILA 4 -->
+          <tr
+            class="table-row-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#row4-details"
+          >
+            <td>150×200 cm</td>
+            <td>≈ 667 g/m²</td>
+            <td>44,34 €</td>
+          </tr>
+
+          <tr id="row4-details" class="collapse">
+            <td colspan="3">
+              <ul class="mb-0 small">
+                <li><strong>Nombre:</strong> Edredón lana NZ (2 kg)</li>
+                <li><strong>Peso total:</strong> 2 kg</li>
+                <li>
+                  <strong>Enlace:</strong>
+                  <a href="https://es.aliexpress.com/item/1005008472028853.html" target="_blank">Ver</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- FILA 5 -->
+          <tr
+            class="table-row-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#row5-details"
+          >
+            <td>150×200 cm</td>
+            <td>1000 g/m²</td>
+            <td>59,24 €</td>
+          </tr>
+
+          <tr id="row5-details" class="collapse">
+            <td colspan="3">
+              <ul class="mb-0 small">
+                <li><strong>Nombre:</strong> Edredón lana NZ (3 kg)</li>
+                <li><strong>Peso total:</strong> 3 kg</li>
+                <li>
+                  <strong>Enlace:</strong>
+                  <a href="https://es.aliexpress.com/item/1005008472028853.html" target="_blank">Ver</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
